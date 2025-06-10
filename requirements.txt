@@ -1,0 +1,2 @@
+ldaptor>=21.2.0
+twisted>=25.5.0
