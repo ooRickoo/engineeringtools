@@ -1,0 +1,7 @@
+{
+    "admin": {
+        "password": "adminpass",
+        "email": "admin@example.com",
+        "cn": "Administrator"
+    }
+}
