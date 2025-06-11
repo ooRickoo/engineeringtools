@@ -1,6 +1,3 @@
-
-]
-
 # Engineering Tools
 
 A collection of utility tools for various engineering tasks.
@@ -12,6 +9,11 @@ A lightweight, Python-based LDAP server with administrative utilities for user a
 
 - **[LDAP Server](docs/ldap-server.md)** - Standalone LDAP server with JSON-based data persistence
 - **[LDAP Admin](docs/ldap-admin.md)** - Command-line tool for managing LDAP users and groups
+
+### Object Storage Server & Client
+A high-performance, multi-protocol object storage server with comprehensive client tools for file management.
+
+- **[Object Storage System](docs/object-storage.md)** - Multi-protocol storage server (S3, Azure, GCS, WebDAV) with mobile device support
 
 ## Quick Start
 
@@ -31,7 +33,7 @@ A lightweight, Python-based LDAP server with administrative utilities for user a
 
 3. Install dependencies:
    ```bash
-   pip install ldaptor twisted
+   pip install -r requirements.txt
    ```
 
 4. Navigate to the specific tool directory and follow its documentation.

@@ -1,2 +1,6 @@
-ldaptor>=21.2.0
+ldaptor==21.2.0
 twisted>=25.5.0
+flask>=2.0.0
+requests>=2.25.0
+urllib3>=1.26.0
+cryptography>=3.4.0
