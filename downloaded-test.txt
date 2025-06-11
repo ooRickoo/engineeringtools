@@ -1,0 +1,2 @@
+Hello from Object Storage!
+This is a test file to demonstrate the upload functionality.
