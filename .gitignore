@@ -56,6 +56,20 @@ logs/
 # Data files (optional - uncomment if you don't want to track data)
 # ldap-data/
 
+# Object storage data and metadata (exclude from git)
+object-storage/
+object-storage-metadata/
+certs/
+
+# Demo and test files
+test-file.txt
+test-sync-folder/
+downloaded-test.txt
+demo-*.jpg
+demo-*.pdf
+sync-demo/
+downloads/
+
 # Runtime files
 *.pid
 *.sock

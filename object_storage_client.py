@@ -206,12 +206,8 @@ class ObjectStorageClient:
                     if local_md5 == remote_etag:
                         print(f"File {object_key} already exists with same content, skipping upload")
                         return True
-            except requests.exceptions.HTTPError as e:
-                if e.response.status_code != 404:
-                    # Only print error if it's not "file not found"
-                    print(f"Warning: Could not check if file exists: {e}")
-            except Exception as e:
-                print(f"Warning: Could not check if file exists: {e}")
+            except:
+                pass  # File doesn't exist, continue with upload
         
         try:
             print(f"Uploading {local_path} -> {bucket_name}/{object_key} ({self._format_size(file_size)})")

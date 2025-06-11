@@ -75,8 +75,7 @@ class ObjectStorageServer:
         
         # WebDAV for iOS/macOS compatibility
         self.app.add_url_rule('/webdav', 'webdav_root', self.webdav_root, methods=['PROPFIND', 'OPTIONS'])
-        self.app.add_url_rule('/webdav/', 'webdav_root_slash', self.webdav_root, methods=['PROPFIND', 'OPTIONS'])
-        self.app.add_url_rule('/webdav/<path:path>', 'webdav_operations', self.webdav_operations, methods=['GET', 'PUT', 'DELETE', 'PROPFIND', 'MKCOL', 'COPY', 'MOVE', 'OPTIONS'])
+        self.app.add_url_rule('/webdav/<path:path>', 'webdav_operations', self.webdav_operations, methods=['GET', 'PUT', 'DELETE', 'PROPFIND', 'MKCOL', 'COPY', 'MOVE'])
         
         # Health check
         self.app.add_url_rule('/health', 'health', self.health_check, methods=['GET'])
